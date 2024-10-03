@@ -10,11 +10,13 @@ def pascal_triangle(n):
   elif n is None:
     return None
   for y in range(n):
-    row = [1]
+    row = []
     
-    if (y > 0):
-      for x in range(1, y):
+    for x in range(y+1):
+      if (x == 0 or x == y):
+        row.append(1)
+      else:
         row.append(triangle[y-1][x-1] + triangle[y-1][x])
-      row.append(1)
     triangle.append(row)
+    
   return triangle
