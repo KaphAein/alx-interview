@@ -1,0 +1,21 @@
+#!/usr/bin/python3
+'''Pascal Triangle Module'''
+
+
+def pascal_triangle(n):
+'''Creats a Pascal Triangle'''
+
+triangle = []
+  if type(n) is not int or n <= 0:
+     return triangle
+     
+  for y in range n:
+     row
+     for x in range (y + 1):
+        if x == 0:
+        triangle[x, y] = 1
+      elif x == y:
+        triangle[x, y] = 1
+      else:
+        triangle[x, y] = triangle[x, y-1] + triangle[x-1, y-1]
+    return triangle
