@@ -7,7 +7,8 @@ def pascal_triangle(n):
   triangle = []
   if not isinstance(n, int) or n <= 0:
     return triangle
-     
+  elif n is None:
+    return None
   for y in range(n):
     row = [1]
     
