@@ -21,4 +21,4 @@ def pascal_triangle(n):
                 row.append(triangle[y-1][x-1] + triangle[y-1][x])
         triangle.append(row)
 
-        return triangle
+    return triangle
