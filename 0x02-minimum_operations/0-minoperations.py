@@ -18,4 +18,7 @@ def minOperations(n):
             operations += i
             current //= i
 
+    for current > 1:
+        operations += current
+
     return operations
