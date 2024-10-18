@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+'''Main file for copy/paste algorithm'''
+
+
 def minOperations(n):
     '''Calculates the minimum number of operations to get exactly n 'H' characters'''
 
