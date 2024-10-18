@@ -13,7 +13,7 @@ def minOperations(n):
     operations = 0
     current = n
 
-    for i in range(2, n + 1):
+    for i in range(2, int(math.sqrt(n)) + 1):
         while current % i == 0:
             operations += i
             current //= i
