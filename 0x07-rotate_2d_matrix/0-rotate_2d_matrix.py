@@ -4,6 +4,9 @@
 
 def rotate_2d_matrix(matrix):
     '''2D Matrix Function'''
+    if type(matrix) is not list or len(matrix) <= 0:
+        return
+
     n = len(matrix)
 
     for i in range(n):
